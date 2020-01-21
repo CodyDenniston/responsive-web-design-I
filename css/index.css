@@ -1,3 +1,306 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	max-width:100%;
+	
+  /*   border:1px solid grey; */
+  }
+
+ 
+
+.HeaderImage{
+	
+	width: 35%;
+	
+	
+}
+.Title{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+}
+.Title_Img{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#Nav1{
+	
+	width: 60%;
+}
+#Nav1 a{
+	
+	width: 10%;
+	margin: 2.5%;
+	padding: 1%;
+	font-size: 80%;
+	color: slategray;
+	text-decoration: none;
+}
+.logo{
+	
+	min-width: 20%;
+	max-width: 40%;
+	
+	
+}
+#Body{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10%;
+	margin-top: 1%;
+	
+}
+.header1{
+	border-bottom: solid black 3px;
+}
+.TopSection{
+	display: flex;
+	height: 100%;
+    width: 100%;
+    
+}
+.middle-img{
+	width: 100%;
+}
+
+.TopMiddleSection{
+	display: flex;
+	border-bottom: solid black 3px;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+ 
+  .Innovation{ 
+	  width: 100%;
+	  font-size: 600%;
+	  text-align:center;
+	  max-width: 100%;
+  }
+  .Button{
+	
+	width: 20%;
+	border: 1px gray solid;
+	text-decoration: none;
+	color: slategray;
+  }
+  
+  .Bottom{
+	  line-height: 20px;
+	  margin-top: 5%;
+  }
+  .Copyright{
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  margin-bottom: 5%;
+  }
+  footer{
+	  margin-top: 6%;
+  }
+
+  /*SERVICES CSS STARTS HERE */
+ 
+  .MainParagraphs {
+	border-bottom: solid black 3px;
+	}
+  
+	.MiddleParagraphs div{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 3% 0 3% 0;
+		
+	}
+
+	.MiddleParagraphs div span{
+		width: 48%;
+		border: solid slategray 2px;
+		padding: 1.5%;
+		background-color: rgba(119, 136, 153, 0.15);
+	}
+
+	.nav2{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 70%;
+		
+	}
+	.nav2 a{
+		text-decoration: none;
+		color: slategray;
+	}
+
+	.header2{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 100%;
+	}
+	.body2{
+		margin: 4% 7% 4% 7%;
+	}
+
+	.Services{
+		
+		margin: 3% 0 3% 0;
+		border-bottom: solid black 3px;
+		padding-bottom: 5%;
+	}
+	.Services h1{
+		font-size: 160%;
+	}
+	.services-header-img{
+		width: 100%;
+	}
+
+	.footer1{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 3% 0 3% 0;
+		
+	}
+
+	.footer1 span{
+		width: 48%;
+		
+    }
+    
+    @media (max-width: 800px){
+
+    .TopSection{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    #Nav1{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    .logo{
+        margin: 3%;
+    }
+    .HeaderImage{
+        display: none;
+    }
+    .Innovation{
+        justify-content: center;
+        align-items: center;
+        font-size: 350%;
+		margin: 3% 0;
+		
+		
+	}
+	.Title{
+		flex-direction: column;
+		align-items: center;
+		margin: 4% 0 10% 0;
+	}
+	.Button{
+text-align: center;
+	}
+}
+@media (max-width: 500px){
+	.TopSection{
+        display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+        align-items: center;
+	}
+	#Nav1{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#Nav1 a{
+		border: slategray 1px solid;
+
+		margin: 0;
+		padding: 4% 60%;
+		
+	}
+	.TopMiddleSection{
+		flex-direction: column;
+		
+	}
+	.TopMiddleSection div{
+		margin: 4% 0;
+		
+	}
+}
